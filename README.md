@@ -11,6 +11,7 @@ Perfect for learning about websockets, real-time messaging, and integrating fron
 - [Node.js](https://nodejs.org/)
 - [Express](https://expressjs.com/)
 - [Socket.IO](https://socket.io/)
+- [nodemon] (for development)
 
 ## Installation
 
@@ -24,15 +25,23 @@ cd RealTime-Simple-ChatBot
 Install dependencies:
 
 ```bash
-npm install express socket.io
+npm install express socket.io nodemon
 ```
+
+Add this script to your package.json:
+
+// ...existing code...
+"scripts": {
+"devStart": "nodemon server.js"
+}
+// ...existing code...
 
 ## How to Run
 
-Start the server:
+Start the development server:
 
 ```bash
-node server.js
+npm run devStart
 ```
 
 Open your browser and go to:
